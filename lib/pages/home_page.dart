@@ -45,9 +45,12 @@ class _HomePageState extends State<HomePage> {
                           child: Card(
                             child: Column(
                               children: [
-                                Image.network(
-                                  cocktails[x].strDrinkThumb ?? "",
-                                  fit: BoxFit.scaleDown,
+                                Hero(
+                                  tag: "${cocktails[x].idDrink}",
+                                  child: Image.network(
+                                    cocktails[x].strDrinkThumb ?? "",
+                                    fit: BoxFit.scaleDown,
+                                  ),
                                 ),
                                 Expanded(
                                   child: Container(

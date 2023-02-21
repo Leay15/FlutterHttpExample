@@ -15,7 +15,7 @@ class DetailPage extends StatelessWidget {
           SliverAppBar(
             flexibleSpace: FlexibleSpaceBar(
               background: Hero(
-                  tag: "${_cocktail.strDrink}",
+                  tag: "${_cocktail.idDrink}",
                   child: Image.network(
                     _cocktail.strDrinkThumb ?? "",
                     fit: BoxFit.cover,
